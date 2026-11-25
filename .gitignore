@@ -1,0 +1,20 @@
+# Personal / sample media
+person.jpg
+*.jpg
+*.jpeg
+*.png
+*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+.env.*
