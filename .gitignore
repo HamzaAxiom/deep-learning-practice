@@ -18,3 +18,4 @@ venv/
 # Environment / secrets
 .env
 .env.*
+01-pose-estimation/pose_landmarker_lite.task
