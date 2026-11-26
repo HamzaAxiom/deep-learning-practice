@@ -4,7 +4,7 @@ person.jpg
 *.jpeg
 *.png
 *.pdf
-
+*.mp4
 # Python
 __pycache__/
 *.py[cod]
