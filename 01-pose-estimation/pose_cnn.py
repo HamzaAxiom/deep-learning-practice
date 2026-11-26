@@ -41,8 +41,8 @@ optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
 
 
 # %% training loop
-
-for epoch in range(30):
+n_epoch = 30
+for epoch in range(n_epoch):
     for i, (images, heatmaps) in enumerate(dataloader):
         images = images.to(device)
         heatmaps = heatmaps.to(device)
@@ -52,7 +52,7 @@ for epoch in range(30):
         loss.backward()
         optimizer.step()
         if i % 10 == 0:
-            print(f'Epoch [{epoch}/{10}], Step [{i}/{len(dataloader)}], Loss: {loss.item():.4f}')
+            print(f'Epoch [{epoch}/{n_epoch}], Step [{i}/{len(dataloader)}], Loss: {loss.item():.4f}')
 # %%
 # %% evaluate & visualize
 import matplotlib.pyplot as plt
